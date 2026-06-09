@@ -1,0 +1,26 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi_manager.c"
+        "news_widget.c"
+        "music_widget.c"
+        "display.c"
+        "battery.c"
+        "countdown_widget.c"
+        "ota.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp_wifi
+        esp_event
+        nvs_flash
+        bt
+        esp_http_client
+        esp_https_ota
+        json
+        driver
+        esp_timer
+        freertos
+        log
+        esp_netif
+        mbedtls
+)
